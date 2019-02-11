@@ -12,16 +12,11 @@ The Booking Widget features two main sections, the Guest Selection Menu and the 
 
 The Guest Selection Menu allows clients to add and remove guests, and affects the unit’s price as well. The price increases as the number of adults and children increase.
 
-![alt text](https://s3.amazonaws.com/coffeegodddfec1/guestMenu.png)
-
 The Date-picker allows a client to select specific dates she wants to book within a hosts given availability. The date range selected by a client also affects the price per night of the unit.
-
-![alt text](https://s3.amazonaws.com/coffeegodddfec1/datepicker.png)
 
 The Unit Description dynamically renders information about a rental unit and about the owner.
 If a unit is owned by a SuperHost, that information is rendered accordingly.
 
 Similarly, The Amenities Component has a small dynamically rendered section highlighting up to four desirable amenities, but can be expanded into a modal that displays the descriptions of each amenity the unit contains, as well as the amenities a unit does not contain.
 
-![alt text](https://s3.amazonaws.com/coffeegodddfec1/amenities.png)
 
