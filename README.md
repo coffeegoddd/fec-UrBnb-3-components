@@ -4,6 +4,8 @@ Javascript | Node.js | Express | React | MongoDB
 
 UrBnb is a full-stack application with significant emphasis on front-end development. It intends to replicate an AirBnb rental page. The goal of this project was for our engineering team to learn how to recreate different components of an AirBnb rental page while using a microservices architecture. The focus of this project was on presentation and surface-level functionality, while mimicking Airbnb as best we could within the our 3 week time-box. I built 3 components for this project, the Booking Widget, the Unit Description, and the Amenities Component.
 
+![alt text](https://s3.amazonaws.com/coffeegodddfec1/both+components.png)
+
 The Booking Widget features two main sections, the Guest Selection Menu and the Date-picker.
 
 The Guest Selection Menu allows clients to add and remove guests, and affects the unit’s price as well. The price increases as the number of adults and children increase.
