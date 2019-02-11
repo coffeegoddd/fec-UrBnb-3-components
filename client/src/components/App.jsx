@@ -17,8 +17,8 @@ import ShowAmens from './unitInfo/ShowAmens.jsx';
 import stylesApp from './styles/app.css';
 import stylesDes from './styles/descriptions.css';
 import stylesAmen from './styles/amenities.css';
-import stylesBook from './styles/bookingWidget.css';
-import BookingWidgetIso from './BookingWidgetIso.jsx';
+import stylesCal from './styles/calendar.css';
+import stylesGuest from './styles/guests.css';
 
 
 class App extends React.Component {
@@ -27,7 +27,7 @@ class App extends React.Component {
     this.state = {
       unitData: [],
       ownerData: [],
-      price: 0,
+      price: '',
       original: 0,
       checkInDate: '',
       checkOutDate: '',
@@ -67,7 +67,7 @@ class App extends React.Component {
   }
 
   fetchUnit() {
-    axios.get(`http://107.22.152.84:2100/api/units/${this.props.id}`)
+    axios.get(`http://localhost:2100/api/units/${this.props.id}`)
       .then(({ data }) => {
         console.log('axios -->', data);
         const { unitData, ownerData } = data;
@@ -230,28 +230,6 @@ class App extends React.Component {
       <div>
         <div>{showAll}</div>
         <div className={stylesApp.container}>
-          {/* <div className={stylesBook.container}>
-            <BookingWidgetIso 
-              unitData={this.state.unitData}
-              price={this.state.price}
-              toggleCalSelectOpen={this.toggleCalSelectOpen}
-              checkInDate={this.state.checkInDate}
-              checkOutDate={this.state.checkOutDate}
-              updateCheckIn={this.updateCheckIn}
-              updateCheckOut={this.updateCheckOut}
-              toggleCheckIn={this.toggleCheckIn}
-              toggleCheckOut={this.toggleCheckOut}
-              calSelectOpen={this.state.calSelectOpen}
-              checkInSelected={this.state.checkInSelected}
-              checkOutSelected={this.state.checkOutSelected}
-              toggleValidRange={this.toggleValidRange}
-              handleNodeClick={this.handleNodeClick}
-              addToPrice={this.addToPrice}
-              removeFromPrice={this.removeFromPrice}
-              finalPrice={finalPrice} 
-            />
-          </div> */}
-
           <div className={stylesApp.modules}>
               <div className={stylesApp.unitInfo}>
 
@@ -284,7 +262,7 @@ class App extends React.Component {
 
               </div>
 
-              {/* <div className={stylesApp.bookingContainer}>
+              <div className={stylesApp.bookingContainer}>
 
 
                 <div className={stylesApp.bookingWidget}>
@@ -334,7 +312,7 @@ class App extends React.Component {
                   </div>
 
                 </div>
-              </div> */}
+              </div>
 
           </div>
         </div>

@@ -1,7 +1,7 @@
 const { 
   generateOwnersData,
   generateUnitsData,
-} = require('./generateData');
+} = require('../generateData');
 
 test('creates an array of owners', () => {
   expect(generateOwnersData().length).toBe(100);

@@ -78,7 +78,6 @@ const unitSchema = new mongoose.Schema({
 const Owner = mongoose.model('Owner', ownerSchema);
 const Unit = mongoose.model('Unit', unitSchema);
 
-
 module.exports = {
   db,
   Owner,
