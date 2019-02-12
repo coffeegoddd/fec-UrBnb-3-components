@@ -1,6 +1,8 @@
 const http = require('http');
 const app = require('./app');
-// const port = process.env.SRV_PORT;
+
+// see the db connection when the server starts
+
 const dbConnection = require('../db/index');
 
 

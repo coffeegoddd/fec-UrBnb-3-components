@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import dateFn from 'date-fns';
 
+
 import OwnerUnit from './unitInfo/OwnerUnit.jsx';
 import SpecList from './unitInfo/SpecList.jsx';
 import Descriptions from './unitInfo/Descriptions.jsx';
@@ -112,7 +113,7 @@ class App extends React.Component {
         calSelectOpen: !state.calSelectOpen,
       };
     });
-    // document.addEventListener('click', this.handleOutsideClick, false);
+    document.addEventListener('click', this.handleOutsideClick, false);
   }
 
   handleOutsideClick(e) {

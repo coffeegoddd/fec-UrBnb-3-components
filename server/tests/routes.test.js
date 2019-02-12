@@ -1,6 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
 
+// attempt at testing, didn't have time to implement the way I intended
 
 test('GET to api/units/unitId should send a response', (done) => {
   request(app).get('/api/units/11111').then((response) => {
